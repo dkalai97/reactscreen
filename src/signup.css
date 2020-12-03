@@ -1,0 +1,294 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(30px);
+  }
+  .login-form {
+    text-align: center;
+    background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+margin-top: 24px;
+   
+  }
+  
+  .login-form > img {
+      margin-top: 18px;
+  }
+
+  h2{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+i.fa-eye{
+    margin-left: -30px;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+  .forgetpsd{
+    color: #000000;
+    text-align: right;
+  }
+
+  .wide-circle {
+    height: 4px;
+    width: 14px;
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 24px;
+    background: #232F3F;
+    margin-top: 18px;
+  }
+  
+  .circle {
+    height: 8px;
+    width: 8px;
+    border: 1px solid rgba(35, 47, 63, 0.3);
+    border-radius: 50%;
+    background: rgba(35, 47, 63, 0.3);
+    margin-top: 17px;
+    margin-left: 8px;
+  }
+  
+  .submit-btn {
+    background: #00ABB7;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 24px;
+    width: 150px;
+    border: 1px solid;
+  }
+  
+  .account-details {
+    margin-top: 20px;
+    color: #575757;
+  }
+  
+  .account-details a {
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+  
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 160px;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+  }
+  
+  .line-space {
+    margin-left: 20px;
+  }
+  
+  .sign-up {
+    color: #575757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .icons-facebook {
+    height: 60px;
+    width: 60px;
+    margin-left: 16px;
+    color: #3B5998;
+    background-color: #fff;
+    border: 2px solid #3B5998;
+    border-radius: 50%;
+  }
+  
+.icons-facebook > img {
+position: relative;
+top:6px;
+}
+
+  .icons-google {
+    height: 60px;
+    width: 60px;
+    margin-left: 24px;
+    font-size: 28px;
+    color: #3B5998;
+    background-color: #fff;
+    border: 2px solid #4285F4;
+    border-radius: 50%;
+  }
+  .icons-google > img {
+      position: relative;
+      top:2px;
+  }
+  .form-group {
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #333;
+  }
+  
+  .form-group label,
+  .form-group span {
+    display: inline;
+    padding: 2px;
+    background: #fff;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font: inherit;
+    /* outline: none; */
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    z-index: 2;
+    height: 52px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #D8D8D8;
+    border-radius: 6px;
+  }
+  
+  .form-group input:focus {
+    border: solid 1px #D8D8D8;
+  }
+  
+  .form-group input[value=""]+label,
+  .form-group input[value=""]+span {
+    transition: 0.3s ease;
+    -webkit-transform: translateY(-0.5em);
+    -ms-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    font-size: 16px;
+    pointer-events: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+  }
+  
+  .form-group input+label,
+  .form-group input+span {
+    transition: 0.3s ease;
+    -webkit-transform: translateY(-0.5em);
+    -ms-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    font-size: 16px;
+    pointer-events: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+  }
+  
+  .form-group input:focus+label,
+  .form-group input:not([value=""])+label,
+  .form-group input:focus+span,
+  .form-group input:not([value=""])+span {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    font-size: 12px;
+    visibility: visible;
+    top: -2px;
+    margin-top: 13px;
+    width: auto;
+    background-color: #fff;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    text-shadow: -4px 2px 0 0 #fff, 3px 0 1px 0 #fff, -2px 0 0 0 #fff, -3px 1px 2px 0 #fff, 6px 0 0 0 #fff, 4px 2px 0 0 #fff, 1px 1px 0 0 #fff;
+  }
+  
+  .form-group input:focus+label,
+  .form-group input:focus+span {
+    color: #333;
+    z-index: 3;
+    font-weight: bold;
+  }
+  
+  .form-group input[disabled]+label,
+  .form-group input[disabled]+span {
+    background-color: #eee;
+  }
+  
+  .form-group .form-control {
+    padding: 10px 12px;
+    height: inherit;
+    width: 290px;
+    box-shadow: none;
+  }
+  
+  .has-error .form-control {
+    border: solid 1px red;
+    background: red;
+  }
+  
+  .has-error .form-control:focus {
+    box-shadow: none;
+    border: solid 1px red;
+  }
+  
+  .has-error .right div {
+    margin-top: 5px;
+  }
+  
+  .has-error .error {
+    margin-bottom: 1px;
+  }
+  
+  .has-error input:focus+label,
+  .has-error input:not([value=""])+label,
+  .has-error input:focus+span,
+  .has-error input:not([value=""])+span {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    font-size: 12px;
+    visibility: visible;
+    top: -2px;
+    margin-top: 13px;
+    width: auto;
+    background-color: #fff;
+    z-index: 3;
+    font-family: "Noto Sans", sans-serif;
+    text-shadow: -4px 2px 0 0 #fff, 3px 0 1px 0 #fff, -2px 0 0 0 #fff, -3px 1px 2px 0 #fff, 6px 0 0 0 #fff, 4px 2px 0 0 #fff, 1px 1px 0 0 #fff;
+  }
+  
+  .has-error label,
+  .has-error span {
+    display: inline;
+    padding: 2px;
+    background: #fde8e8;
+    color: #333;
+  }
+  
+  .has-error input:focus {
+    border: solid 1px red;
+    background: #fff;
+  }
