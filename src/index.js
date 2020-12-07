@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Signup from './signup';
 import reportWebVitals from './reportWebVitals';
+import Signup from './signup';
 import './signup.css'
-
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Signup />
+   
+   <Signup />
   </React.StrictMode>,
   document.getElementById('root')
+
 );
 
 // If you want to start measuring performance in your app, pass a function

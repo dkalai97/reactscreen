@@ -1,12 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
 
 class signup extends React.Component {
     constructor() {
         super();
-        this.state = { email: '', password: '' , type:'password' };
+        this.state = { email: '', password: '' , type:'password'}
+        
       }
+
+
       handleChange = (e) => {
-        this.setState({ email: e.target.value });
+        this.setState({ email: e.target.value }); 
+        
       };
       handleChangepassword = (e) => {
         this.setState({ password: e.target.value });
@@ -19,6 +26,8 @@ class signup extends React.Component {
             this.setState({type: "password"});
           }
       }
+
+
     render() {
       return (
           
@@ -28,11 +37,11 @@ class signup extends React.Component {
         <form>
             <div className="d-lg-flex d-md-flex flex-lg-column flex-md-column align-items-lg-center align-items-md-center">
                 <div className="form-group col-lg-10 col-md-10">
-                <input type="text" value={this.state.email} onChange={this.handleChange} />
+                <input type="email" value={this.state.email} onChange={this.handleChange} required />
                     <label>Email</label>
                 </div>
                 <div className="form-group col-lg-10 col-md-10">
-                    <input type={this.state.type} value={this.state.password} onChange={this.handleChangepassword} />
+                    <input type={this.state.type} value={this.state.password} onChange={this.handleChangepassword} required />
                     <label>Password</label>
                     <i class="fa fa-eye" aria-hidden="true" id="togglePassword" onClick={this.showpassword}></i>
                 </div>
@@ -51,13 +60,14 @@ class signup extends React.Component {
                     <span className="line-space"><hr/></span>
                 </div>
                 <div className="sign-up">
-                    <span>Login Using:</span>
-                    <span className="icons-facebook">
-                        <img src="facebook.png"/>
-                    </span>
-                    <span className="icons-google">
-                        <img src="google.png"/>
-                    </span>
+            <span>Login Using:</span>
+                   
+  
+                    <GoogleLogin
+    clientId="998149793217-9dgfrcq78h2dt5nk792sakl4vcj1h36e.apps.googleusercontent.com"
+    buttonText="" 
+    cookiePolicy={'single_host_origin'}
+  />,
                 </div>
             </div>
         </form>
