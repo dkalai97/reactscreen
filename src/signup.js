@@ -69,7 +69,7 @@ class signup extends React.Component {
             <div className="account-details">
               <span>Don't have an account</span>
               <a href="#">Signup</a>
-              <a href="javascript:;">forget login</a>
+              <a href="javascript:;">Forget login</a>
             </div>
             <div className="d-flex">
               <hr />
