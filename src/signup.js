@@ -27,8 +27,7 @@ class signup extends React.Component {
     return (
       <div className="col-lg-4 col-md-8 login-form mx-lg-auto mx-md-auto">
         <img src="OCC1 1.png" />
-        <h2>Welcome Back,</h2>
-
+        <h2>Welcome Back users</h2>
         <form>
           <div className="d-lg-flex d-md-flex flex-lg-column flex-md-column align-items-lg-center align-items-md-center">
             <div className="form-group col-lg-10 col-md-10">
